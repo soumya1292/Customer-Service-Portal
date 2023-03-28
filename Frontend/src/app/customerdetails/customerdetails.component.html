@@ -1,0 +1,51 @@
+<nav class ="navbar navbar-expand -sm bg-primary navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a routerLink="/requests" routerActiveLink="active" class="nav-link">Requests</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a routerLink="create-request" routerActiveLink="active" class="nav-link">Create Request</a>
+      </li> -->
+      <li class="nav-item">
+        <a routerLink="/login"  class="nav-link" (click)="logout()">Logout</a>
+      </li>
+         
+    </ul>
+    
+    </nav>
+<div class="container">
+    <h2 id="table-title" class="text-center">Customers</h2>
+    <div style="margin-bottom: 20px;"></div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>user_id</th>
+                <th>firstname </th>
+                <th>lastname</th>
+                <th>email</th>
+                <th>phone</th>
+                <th>pwd</th>
+                <th>User Role</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let userdetails of user">
+                <td> {{ userdetails.user_id}}</td>
+                <td> {{ userdetails.firstname }}</td>
+                <td> {{ userdetails.lastname}}</td>
+                <td> {{ userdetails.email}}</td>
+                <td> {{ userdetails.phone}}</td>
+                <td> {{ userdetails.pwd}}</td>
+                <td> {{ userdetails.user_role}}</td>
+                <td>
+                    <button class="btn btn-primary" (click)="btnUpdateUser(userdetails.email)">Update</button>
+
+
+                </td>
+
+            </tr>
+        </tbody>
+
+    </table>
+</div>

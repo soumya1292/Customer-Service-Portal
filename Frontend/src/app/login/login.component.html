@@ -1,0 +1,55 @@
+<div class="form-body">
+    <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <h3>Login</h3>
+                    <form [formGroup]="UserForm">
+
+                        <div class="col-md-12">
+                            <input type="email"  class="form-control" formControlName="Email" required="" placeholder="Email" />
+                        </div>
+                        <div class="col-md-12">
+                            <input type="password" placeholder="Password"  class="form-control" formControlName="Password" required="" />
+                        </div>
+
+                        <div class="form-button mt-3">
+                            <button id="submit" type="submit" class="btn btn-primary"
+                                (click)="Login()">Submit</button>
+                                <button  class="btn btn-primary" routerLink="/register"
+                                > Register</button>
+                        </div>
+                        <!-- <div class="form-button mt-3">
+                            
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <mat-card>
+    <mat-card-header>
+        <h1>User login</h1>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="loginform" (ngSubmit)="Login()" required="">
+            <mat-form-field class="example-full-width">
+                <mat-label>User Name</mat-label>
+                <input matInput formControlName="Email">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput formControlName="Password" required="">
+            </mat-form-field>
+
+            <div>
+                <button mat-raised-button color="primary">Submit </button>
+                <a routerLink="/register" mat-raised-button color="accent">Register</a>
+            </div>
+        </form>
+
+    </mat-card-content>
+</mat-card> -->

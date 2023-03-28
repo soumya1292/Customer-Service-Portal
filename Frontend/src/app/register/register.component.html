@@ -1,0 +1,87 @@
+<!-- <mat-card>
+    <mat-card-header>
+        <h1>Registration</h1>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="registerform" (ngSubmit)="proceedregistration()">
+            <mat-form-field class="example-form">
+                <mat-label>User Name</mat-label>
+                <input matInput formControlName="id">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-form">
+                <mat-label>First Name</mat-label>
+                <input matInput formControlName="firstname">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-form">
+                <mat-label>Last Name</mat-label>
+                <input matInput formControlName="lastname">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-form">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput formControlName="password">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-form">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-form">
+                <mat-label>Contact No</mat-label>
+                <input matInput formControlName="contactno">
+            </mat-form-field>
+
+            <div>
+                <button mat-raised-button color="primary">Submit </button>
+                <a routerLink="/login" mat-raised-button color="accent">Back to Login</a>
+            </div>
+        </form>
+
+        
+
+    </mat-card-content>
+</mat-card>
+ -->
+
+ <div class="form-body">
+    <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <h3>Register</h3>
+                    <form class="requires-validation" novalidate>
+  
+                        <div class="col-md-12">
+                           <input class="form-control" [(ngModel)]="user_id" [ngModelOptions]="{standalone: true}" type="text" name="user_id" placeholder="User ID"  required>
+                           </div>
+  
+                        <div class="col-md-12">
+                            <input class="form-control" [(ngModel)]="firstname" [ngModelOptions]="{standalone: true}" type="text" name="firstname" placeholder="First Name" required>
+                        </div>
+                        <div class="col-md-12">
+                          <input class="form-control" [(ngModel)]="lastname" [ngModelOptions]="{standalone: true}" type="text" name="lastname" placeholder="Last Name" required>
+                      </div>
+                      <div class="col-md-12">
+                        <input class="form-control" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" type="email" name="email" placeholder="Email" required>
+                    </div>
+  
+                      
+                       <div class="col-md-12">
+                        <input class="form-control" [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" type="tel" name="phone" placeholder="Contact No" required>
+                    </div>
+                    <div class="col-md-12">
+                        <input class="form-control" [(ngModel)]="pwd" [ngModelOptions]="{standalone: true}" type="password" name="pwd" placeholder="Password" required>
+                    </div>
+                        <div class="form-button mt-3">
+                            <button id="submit" type="submit" class="btn btn-primary" (click)="proceedregistration()">Submit</button>
+                            <button id="Backtologin" class="btn btn-primary" routerLink="/login" >Back to login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
