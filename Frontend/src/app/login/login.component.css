@@ -1,19 +1,172 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap'); */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap'); 
+ img{
+	width: 100%;
+}
+.login {
+    height: 1000px;
+    width: 100%;
+    background: radial-gradient(#653d84, #332042);
+    position: relative;
+}
+.login_box {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+}
+.login_box .left{
+  width: 41%;
+  height: 100%;
+  padding: 25px 25px;
+  
+}
+.login_box .right{
+  width: 59%;
+  height: 100%  
+}
+.left .top_link a {
+    color: #452A5A;
+    font-weight: 400;
+}
+.left .top_link{
+  height: 20px
+}
+.left .contact{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+.left h3{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.left input {
+    border: none;
+    width: 80%;
+    margin: 15px 0px;
+    border-bottom: 1px solid #4f30677d;
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+.left{
+	background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    background: #583672;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
 
-*, body {
+.registerBtn {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 20px;
+    background: #583672;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
+
+
+
+.right {
+	background: linear-gradient(212.38deg, rgba(242, 57, 127, 0.7) 0%, rgba(175, 70, 189, 0.71) 100%),url(https://static.seattletimes.com/wp-content/uploads/2019/01/web-typing-ergonomics-1020x680.jpg);
+	color: #fff;
+	position: relative;
+}
+
+.right .right-text{
+  height: 100%;
+  position: relative;
+  transform: translate(0%, 45%);
+}
+.right-text h2{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+.right-text h5, h3{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.right .right-inductor{
+  position: absolute;
+  width: 70px;
+  height: 7px;
+  background: #fff0;
+  left: 50%;
+  bottom: 70px;
+  transform: translate(-50%, 0%);
+}
+.top_link img {
+    width: 28px;
+    padding-right: 7px;
+    margin-top: -3px;
+}
+
+
+
+
+
+/* *, body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
+    background-color:aliceblue;
+    background-image: url(src\app\login\background.jpg);
+    background-repeat: no-repeat;
+    background-size: cove;
+   
+   
 }
 
 html, body {
     height: 100%;
-    background-color: #152733;
+    background-color: #5490b7;
     overflow: hidden;
-}
+} */
 
+
+/*   
+  .Entireform{
+background-image: none;
+  }
 
 .form-holder {
       display: flex;
@@ -22,22 +175,11 @@ html, body {
       align-items: center;
       text-align: center;
       min-height: 100vh;
+      background-color: #fff;
+      
 }
 
-.form-holder .form-content {
-    position: relative;
-    text-align: center;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
-    padding: 60px;
-}
+
 
 .form-content .form-items {
     border: 3px solid #060505;
@@ -51,6 +193,8 @@ html, body {
     text-align: left;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    background-image: none;
+    background-color: aliceblue;
 }
 
 .form-content h3 {
@@ -59,10 +203,13 @@ html, body {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 5px;
+    background-image: none;
+    
 }
 
 .form-content h3.form-title {
     margin-bottom: 30px;
+    background-image: none;
 }
 
 .form-content p {
@@ -72,11 +219,13 @@ html, body {
     font-weight: 300;
     line-height: 20px;
     margin-bottom: 30px;
+    background-image: none;
 }
 
 
 .form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
     color: #000000;
+    background-image: none;
 }
 
 .form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content input[type=tel],.form-content select {
@@ -93,6 +242,7 @@ html, body {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     margin-top: 16px;
+    background-image: none;
 }
 
 
@@ -116,7 +266,7 @@ html, body {
     padding: 8px 20px;
     border-radius: 6px;
     text-align: left;
-    background-color: #fff;
+    background-color: #3f3d3d;
     border: 0;
     font-size: 15px;
     font-weight: 300;
@@ -127,22 +277,26 @@ html, body {
     -webkit-transition: none;
     transition: none;
     margin-bottom: 14px;
+    background-image: none;
 }
 
 .form-content textarea:hover, .form-content textarea:focus {
     border: 0;
-    background-color: #ebeff8;
+    background-color: #6C757D;
     color: #8D8D8D;
+    background-image: none;
 }
 
 .mv-up{
     margin-top: -9px !important;
     margin-bottom: 8px !important;
+    
 }
 
 .invalid-feedback{
     color: #ff606e;
 }
+
 
 .valid-feedback{
    color: #2acc80;
@@ -150,4 +304,14 @@ html, body {
 
 #submit{
     margin-right: 10px;
+    background-image: none;
 }
+#register{
+    background-image: none;
+}
+.page-title{
+    background-image: none;
+   
+    
+}
+ */
